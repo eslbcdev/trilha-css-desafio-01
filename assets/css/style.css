@@ -66,7 +66,6 @@ h1{
 }
 
 .button{
-/* --- ESTILOS BÁSICOS --- */
   display: block;         
   margin: 24px auto;      
   width: 326px;
@@ -74,6 +73,8 @@ h1{
   border: 2px solid transparent;
   border-image-source: linear-gradient(to bottom, rgba(51, 168, 218, 100%), rgba(20, 114, 183, 100%));
   border-image-slice: 1;
+  background-clip: padding-box;
+    
 }
 
 .button button{
@@ -81,10 +82,11 @@ h1{
     height: 100%;
     border: none;
     background: none;
-    color: transparent;           /* Cor do texto */
-    background-image: linear-gradient(to bottom, rgba(51, 168, 218, 100%), rgba(20, 114, 183, 100%));
-    -webkit-background-clip: text; /* Necessário para que o texto apareça com o gradiente */
+    color: transparent;
+    background-image: linear-gradient (to bottom, rgba(51, 168, 218, 100%), rgba(20, 114, 183, 100%));
+    -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;        
