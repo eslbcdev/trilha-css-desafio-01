@@ -72,7 +72,7 @@ h1{
   width: 326px;
   height: 57px;
   border: 2px solid transparent;
-  border-image-source: linear-gradient(to bottom, rgb(51, 168, 218, 100%), rgb(20, 114, 183, 100%));
+  border-image-source: linear-gradient(to bottom, rgba(51, 168, 218, 100%), rgba(20, 114, 183, 100%));
   border-image-slice: 1;
 }
 
@@ -82,14 +82,13 @@ h1{
     border: none;
     background: none;
     color: transparent;           /* Cor do texto */
-    background-image: linear-gradient(to bottom, rgb(51, 168, 218, 100%), rgb(20, 114, 183, 100%));
+    background-image: linear-gradient(to bottom, rgba(51, 168, 218, 100%), rgba(20, 114, 183, 100%));
     -webkit-background-clip: text; /* Necessário para que o texto apareça com o gradiente */
     background-clip: text;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;        
     position: relative;
-    
 }
 
 #course-content{
